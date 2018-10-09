@@ -1,5 +1,7 @@
 package com.shoesobjects.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,7 +18,14 @@ public class Contact {
 	private String lastName;
 	private String email;
 	private String phoneNumber;
+	private String date;
 	
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	public Long getId() {
 		return id;
 	}
